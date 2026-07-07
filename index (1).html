@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 3: Project Board</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #e4e9ed; }
+        .form-container { max-width: 400px; margin: 0 auto 20px auto; background: white; padding: 15px; border-radius: 5px; }
+        .board { display: flex; gap: 15px; max-width: 900px; margin: auto; }
+        .column { flex: 1; background: #ebecf0; padding: 12px; border-radius: 5px; min-height: 400px; }
+        .task-card { background: white; padding: 10px; margin: 8px 0; border-radius: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.1); }
+        input, textarea { width: 90%; padding: 6px; margin: 5px 0; }
+        .add-btn { background-color: #2ed573; color: white; border: none; padding: 8px; width: 100%; cursor: pointer; }
+        .move-btn { background-color: #747d8c; color: white; border: none; font-size: 11px; padding: 4px 6px; cursor: pointer; border-radius: 2px; }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Mini Project Management Board</h2>
+
+    <div class="form-container">
+        <h3>Create New Assignment</h3>
+        <input type="text" id="taskTitle" placeholder="Task Title (e.g., Chemistry Record)"><br>
+        <textarea id="taskDesc" placeholder="Description..."></textarea><br>
+        <input type="text" id="student" placeholder="Assign Student Name"><br>
+        <button id="addBtn" class="add-btn">Add to Board</button>
+    </div>
+
+    <div class="board">
+        <div class="column">
+            <h4>To Do</h4>
+            <div id="todoList"></div>
+        </div>
+        <div class="column">
+            <h4>In Progress</h4>
+            <div id="progressList"></div>
+        </div>
+        <div class="column">
+            <h4>Done</h4>
+            <div id="doneList"></div>
+        </div>
+    </div>
+
+    <script src="app3.js"></script>
+</body>
+</html>
