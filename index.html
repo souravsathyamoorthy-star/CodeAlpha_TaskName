@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 2: My Social Media App</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; background-color: #f0f2f5; }
+        .main-box { background: white; padding: 20px; border-radius: 8px; max-width: 500px; margin: auto; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        input, textarea { width: 95%; padding: 8px; margin: 8px 0; border: 1px solid #ccc; border-radius: 4px; }
+        button { background-color: #1877f2; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; width: 100%; }
+        .post-card { background: #f9f9f9; border: 1px solid #e0e0e0; padding: 12px; margin-top: 15px; border-radius: 5px; }
+        .like-btn { background-color: #e4e6eb; color: black; width: auto; padding: 5px 10px; font-size: 12px; margin-top: 5px; }
+    </style>
+</head>
+<body>
+
+    <div class="main-box">
+        <h2>College Social Feed</h2>
+        <input type="text" id="author" placeholder="Enter your username (e.g., ramesh_cse)">
+        <textarea id="content" placeholder="What is on your mind, da?"></textarea>
+        <button id="postBtn">Post Now</button>
+
+        <h3>Global Feed</h3>
+        <div id="feedBox">Loading feed...</div>
+    </div>
+
+    <script src="app2.js"></script>
+</body>
+</html>
